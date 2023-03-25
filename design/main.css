@@ -18,15 +18,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
   
   font-size: 400;
 } 
 
-header ul {
-  display: flex;
-  gap: 40px;
-}
 
 ul, button, svg{
   cursor: pointer;
@@ -133,7 +128,7 @@ section:last-of-type{
 
 section:last-of-type .text{
   justify-content: flex-start;
-
+  
 }
 
 section:last-of-type .wavy{
@@ -207,7 +202,7 @@ section:last-of-type a img{
 }
 .avatar p{
   font-size: .9em;
-
+  
 }
 
 .avatar img{
@@ -300,7 +295,7 @@ footer li, .icons svg{
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-
+  
 }
 
 footer li:hover, .icons svg:hover{
@@ -308,7 +303,7 @@ footer li:hover, .icons svg:hover{
 }
 
 @media (min-width:0px) and (max-width: 500px) {
-
+  
   body{
     text-align: center;
   }
@@ -327,7 +322,7 @@ footer li:hover, .icons svg:hover{
     text-align: center;
     align-items: center;
   }
-
+  
   .preF h3{
     text-align: center;
   }
@@ -338,7 +333,14 @@ footer li:hover, .icons svg:hover{
   #form input, #form button{
     width: 300px;
   }
+  header ul {
+    display: flex;
+    gap: .5em;
+  }
+  header{
   
+    padding: 50px 10px;
+  }
 }
 
 @media (min-width:501px) {
@@ -348,6 +350,14 @@ footer li:hover, .icons svg:hover{
   
   #form button{
     width: 200px;
+  }
+  header ul {
+    display: flex;
+    gap: 40px;
+  }
+  header{
+
+    padding: 50px;
   }
 }
 
